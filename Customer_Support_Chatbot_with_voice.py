@@ -53,7 +53,7 @@ from anthropic import Anthropic
 import google.generativeai as genai
 from gtts import gTTS
 
-st.set_page_config(page_title="RAG Support Bot", page_icon="🎧", layout="centered")
+st.set_page_config(page_title="Customer Support Bot", page_icon="🎧", layout="centered")
 
 CSV_PATH = "Customer_Support_Training_Dataset.csv"
 CLAUDE_MODEL = "claude-haiku-4-5-20251001"
@@ -204,7 +204,7 @@ def stream_answer(provider, keys, context, question, history):
 # =============================================================================
 # UI
 # =============================================================================
-st.title("🎧 RAG Customer Support Bot")
+st.title("🎧 Customer Support Bot")
 st.caption("Retrieval-Augmented Generation over your support-ticket knowledge base. Free voice chat.")
 
 provider = st.sidebar.selectbox("Choose LLM (for answering)", ["Claude", "Gemini"])
